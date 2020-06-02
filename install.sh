@@ -8,6 +8,11 @@ apt-get -y install git
 apt-get -y install net-tools
 apt-get -y install zsh
 apt-get -y install vim
+apt-get -y install tmux
+
+# Create dotfiles
+cat .vimrc > ~/.vimrc
+cat .tmux.conf > ~/.tmux.conf
 
 # Docker install
 apt-get remove docker docker-engine docker.io containerd runc
