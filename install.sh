@@ -9,7 +9,7 @@ apt-get -y install net-tools
 apt-get -y install zsh
 apt-get -y install vim
 apt-get -y install tmux
-apt install postgresql postgresql-contrib
+apt-get -y  postgresql postgresql-contrib
 
 # Install golang
 wget https://dl.google.com/go/go1.14.4.linux-amd64.tar.gz
