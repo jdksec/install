@@ -9,6 +9,13 @@ apt-get -y install net-tools
 apt-get -y install zsh
 apt-get -y install vim
 apt-get -y install tmux
+apt install postgresql postgresql-contrib
+
+# Install golang
+wget https://dl.google.com/go/go1.14.4.linux-amd64.tar.gz
+tar -C /usr/local -xzf go1.14.4.linux-amd64.tar.gz
+export PATH=$PATH:/usr/local/go/bin
+go version
 
 # Create dotfiles
 cat .vimrc > ~/.vimrc
@@ -25,6 +32,7 @@ apt-get install docker-ce docker-ce-cli containerd.io
 curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 
-
 # Install ohmyzsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.zshrc
+echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.bashrc
