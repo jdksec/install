@@ -63,8 +63,6 @@ go get -u github.com/jaeles-project/gospider
 go get -u github.com/hahwul/dalfox
 go get -u github.com/ffuf/ffuf
 
-
-
 # Create dotfiles
 cat .vimrc > ~/.vimrc
 cat .tmux.conf > ~/.tmux.conf
