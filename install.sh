@@ -20,6 +20,7 @@ go version
 # Create dotfiles
 cat .vimrc > ~/.vimrc
 cat .tmux.conf > ~/.tmux.conf
+cat .zprofile > ~/.zprofile
 
 # Docker install
 apt-get remove docker docker-engine docker.io containerd runc
@@ -36,3 +37,6 @@ sudo chmod +x /usr/local/bin/docker-compose
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.zshrc
 echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.bashrc
+
+# Dropbox install
+cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
