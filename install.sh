@@ -1,5 +1,6 @@
 # Basic tool installation
 
+# These are not all on one line as sometimes a package wont install interupting the whole install process.
 apt-get -y update
 apt-get -y upgrade
 apt-get -y dist-upgrade
