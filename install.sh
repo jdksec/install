@@ -247,3 +247,5 @@ git clone https://github.com/sa7mon/S3Scanner.git
 git clone https://github.com/projectdiscovery/nuclei-templates.git
 git clone https://github.com/disclose/disclose.git
 git clone https://github.com/projectdiscovery/public-bugbounty-programs.git
+
+source ~/.zshrc
