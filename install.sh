@@ -151,7 +151,7 @@ cat .tmux.conf > ~/.tmux.conf
 cat .zprofile > ~/.zprofile
 cat .zprofile > ~/.zprofile
 cat .zshrc > ~/.zshrc
-cp jdksec.theme ~/.oh-my-zsh/themes/
+cp jdksec.zsh-theme ~/.oh-my-zsh/themes/
 
 # Docker install
 #apt-get remove docker docker-engine docker.io containerd runc
