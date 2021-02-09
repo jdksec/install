@@ -13,5 +13,5 @@ sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/maste
 git clone https://github.com/jdksec/install.git
 cd install
 chmod 777 install.sh
-sudo install.sh
+sudo ./install.sh
 ```
