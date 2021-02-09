@@ -17,6 +17,12 @@ chmod 777 install.sh
 sudo ./install.sh
 ```
 
+Once finished
+
+```
+ssh-keygen
+```
+
 ## Install WSL (Windows)
 
 Open powershell as admin
