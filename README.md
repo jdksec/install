@@ -3,8 +3,8 @@
 ## Install ohmyzsh
 
 ```
-apt install -y zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sudo apt install -y zsh
+sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 ## Install environment
@@ -12,6 +12,5 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ```
 git clone https://github.com/jdksec/install.git
 chmod 777 ~/install/install.sh
-~/install/install.sh
-git clone https://github.com/jdksec/dev.git
+sudo ~/install/install.sh
 ```
