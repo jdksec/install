@@ -99,3 +99,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+source ~/.zprofile
+alias l='ls -a1'
+alias ls='ls -a1'
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$HOME/go/bin:$PATH
+
