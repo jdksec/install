@@ -1,4 +1,5 @@
 # Install process
+Works on WSL & Linux
 
 ## Install ohmyzsh
 
@@ -15,3 +16,16 @@ cd install
 chmod 777 install.sh
 sudo ./install.sh
 ```
+
+## WSL Install
+
+Open powershell as admin
+
+```
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+```
+reboot
+
+Now go to windows store and download ubuntu and install
+
+Once installed install Windows Terminal from windows store.
