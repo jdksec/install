@@ -21,7 +21,6 @@ apt-get -y install git-core
 apt-get -y install gobuster
 apt-get -y install googler
 apt-get -y install gron
-apt-get -y install gron
 apt-get -y install gunzip
 apt-get -y install hashcat
 apt-get -y install hexedit
@@ -100,10 +99,11 @@ curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/t
 rm msfinstall
 
 # Install golang
-wget https://dl.google.com/go/go1.14.4.linux-amd64.tar.gz
-tar -C /usr/local -xzf go1.14.4.linux-amd64.tar.gz
+wget https://golang.org/dl/go1.17.linux-amd64.tar.gz
+tar -C /usr/local -xzf go1.17.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
 go version
+/bin/rm go1.17.linux-amd64.tar.gz
 
 # install go tools
 go get -u github.com/ameenmaali/qsfuzz
@@ -146,6 +146,7 @@ go get -u github.com/tomnomnom/unfurl
 go get -u github.com/tomnomnom/waybackurls
 
 # Create dotfiles
+cd ~/install
 cat .vimrc > ~/.vimrc
 cat .tmux.conf > ~/.tmux.conf
 cat .zprofile > ~/.zprofile
