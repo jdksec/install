@@ -144,6 +144,8 @@ go get -u github.com/tomnomnom/qsreplace
 go get -u github.com/tomnomnom/tok
 go get -u github.com/tomnomnom/unfurl
 go get -u github.com/tomnomnom/waybackurls
+go get -u github.com/shenwei356/rush/
+go get -v github.com/projectdiscovery/dnsx/cmd/dnsx
 
 # Create dotfiles
 cd ~/install
