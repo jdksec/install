@@ -3,77 +3,77 @@
 sudo systemctl enable ssh
 
 # These are not all on one line as sometimes a package wont install interupting the whole install process.
-apt-get -y update
-apt-get -y upgrade
-apt-get -y dist-upgrade
-apt-get -y install aircrack-ng
-apt-get -y install apache2
-apt-get -y install autossh
-apt-get -y install ca-certificates
-apt-get -y install cargo
-apt-get -y install chromium-browser
-apt-get -y install crackmapexec
-apt-get -y install curl
-apt-get -y install dig
-apt-get -y install fimap
-apt-get -y install ftp
-apt-get -y install gem
-apt-get -y install git
-apt-get -y install git-core
-apt-get -y install gobuster
-apt-get -y install googler
-apt-get -y install gron
-apt-get -y install gunzip
-apt-get -y install hashcat
-apt-get -y install hexedit
-apt-get -y install html2text
-apt-get -y install httpie
-apt-get -y install hydra
-apt-get -y install john
-apt-get -y install jq
-apt-get -y install libcurl4-openssl-dev 
-apt-get -y install libsasl2-2
-apt-get -y install libsasl2-modules
-apt-get -y install libssl-dev
-apt-get -y install locate
-apt-get -y install lynx
-apt-get -y install masscan
-apt-get -y install net-tools
-apt-get -y install nikto
-apt-get -y install nmap
-apt-get -y install nsrecords
-apt-get -y install onesixtyone
-apt-get -y install openssh
-apt-get -y install openssl
-apt-get -y install openvpn
-apt-get -y install php
-apt-get -y install pip
-apt-get -y install proxychains
-apt-get -y install python
-apt-get -y install python-m2crypto
-apt-get -y install python-pip
-apt-get -y install python3
-apt-get -y install python3-pip
-apt-get -y install ranger
-apt-get -y install rar
-apt-get -y install ruby
-apt-get -y install screen
-apt-get -y install socat
-apt-get -y install sqlmap
-apt-get -y install sslscan
-apt-get -y install ssmtp
-apt-get -y install tcpdump
-apt-get -y install theharvester
-apt-get -y install tmux
-apt-get -y install tor
-apt-get -y install vim
-apt-get -y install wafw00f
-apt-get -y install whatweb
-apt-get -y install whois
-apt-get -y install xvfb
-apt-get -y install youtube-dl
-apt-get -y install zip
-apt-get -y install zsh
+sudo apt-get -y update
+sudo apt-get -y upgrade
+sudo apt-get -y dist-upgrade
+sudo apt-get -y install aircrack-ng
+sudo apt-get -y install apache2
+sudo apt-get -y install autossh
+sudo apt-get -y install ca-certificates
+sudo apt-get -y install cargo
+sudo apt-get -y install chromium-browser
+sudo apt-get -y install crackmapexec
+sudo apt-get -y install curl
+sudo apt-get -y install dig
+sudo apt-get -y install fimap
+sudo apt-get -y install ftp
+sudo apt-get -y install gem
+sudo apt-get -y install git
+sudo apt-get -y install git-core
+sudo apt-get -y install gobuster
+sudo apt-get -y install googler
+sudo apt-get -y install gron
+sudo apt-get -y install gunzip
+sudo apt-get -y install hashcat
+sudo apt-get -y install hexedit
+sudo apt-get -y install html2text
+sudo apt-get -y install httpie
+sudo apt-get -y install hydra
+sudo apt-get -y install john
+sudo apt-get -y install jq
+sudo apt-get -y install libcurl4-openssl-dev 
+sudo apt-get -y install libsasl2-2
+sudo apt-get -y install libsasl2-modules
+sudo apt-get -y install libssl-dev
+sudo apt-get -y install locate
+sudo apt-get -y install lynx
+sudo apt-get -y install masscan
+sudo apt-get -y install net-tools
+sudo apt-get -y install nikto
+sudo apt-get -y install nmap
+sudo apt-get -y install nsrecords
+sudo apt-get -y install onesixtyone
+sudo apt-get -y install openssh
+sudo apt-get -y install openssl
+sudo apt-get -y install openvpn
+sudo apt-get -y install php
+sudo apt-get -y install pip
+sudo apt-get -y install proxychains
+sudo apt-get -y install python
+sudo apt-get -y install python-m2crypto
+sudo apt-get -y install python-pip
+sudo apt-get -y install python3
+sudo apt-get -y install python3-pip
+sudo apt-get -y install ranger
+sudo apt-get -y install rar
+sudo apt-get -y install ruby
+sudo apt-get -y install screen
+sudo apt-get -y install socat
+sudo apt-get -y install sqlmap
+sudo apt-get -y install sslscan
+sudo apt-get -y install ssmtp
+sudo apt-get -y install tcpdump
+sudo apt-get -y install theharvester
+sudo apt-get -y install tmux
+sudo apt-get -y install tor
+sudo apt-get -y install vim
+sudo apt-get -y install wafw00f
+sudo apt-get -y install whatweb
+sudo apt-get -y install whois
+sudo apt-get -y install xvfb
+sudo apt-get -y install youtube-dl
+sudo apt-get -y install zip
+sudo apt-get -y install zsh
 
 # install pip tools
 pip3 install awscli
@@ -163,7 +163,7 @@ sudo apt install apt-transport-https ca-certificates curl software-properties-co
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
 apt-cache policy docker-ce
-sudo apt install docker-ce
+sudo apt install docker-ce -ysource
 sudo systemctl status docker
 sudo systemctl disable docker
 sudo usermod -aG docker ${USER}
