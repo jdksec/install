@@ -1,5 +1,7 @@
 # Basic tool installation
 
+sudo systemctl enable ssh
+
 # These are not all on one line as sometimes a package wont install interupting the whole install process.
 apt-get -y update
 apt-get -y upgrade
@@ -157,6 +159,15 @@ cat .zshrc > ~/.zshrc
 cp jdksec.zsh-theme ~/.oh-my-zsh/themes/
 
 # Docker install
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+apt-cache policy docker-ce
+sudo apt install docker-ce
+sudo systemctl status docker
+sudo systemctl disable docker
+sudo usermod -aG docker ${USER}
+
 #apt-get remove docker docker-engine docker.io containerd runc
 #apt-get install apt-transport-https ca-certificates gnupg-agent software-properties-common
 #curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
@@ -250,5 +261,8 @@ git clone https://github.com/sa7mon/S3Scanner.git
 git clone https://github.com/projectdiscovery/nuclei-templates.git
 git clone https://github.com/disclose/disclose.git
 git clone https://github.com/projectdiscovery/public-bugbounty-programs.git
+
+sudo systemctl disable apache2 
+sudo systemctl stop apache2
 
 source ~/.zshrc
