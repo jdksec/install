@@ -104,7 +104,7 @@ rm msfinstall
 
 # Install golang
 wget https://golang.org/dl/go1.17.linux-amd64.tar.gz
-tar -C /usr/local -xzf go1.17.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.17.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
 go version
 /bin/rm go1.17.linux-amd64.tar.gz
@@ -267,4 +267,4 @@ git clone https://github.com/projectdiscovery/public-bugbounty-programs.git
 sudo systemctl disable apache2 
 sudo systemctl stop apache2
 
-source ~/.zshrc
+echo "Now run: source ~/.zshrc"
