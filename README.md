@@ -4,7 +4,7 @@ Works on WSL & Linux
 ## Install ohmyzsh
 
 ```
-sudo apt install -y zsh
+sudo apt install -y zsh git
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
