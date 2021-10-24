@@ -1,11 +1,13 @@
 # Basic tool installation
 
-sudo systemctl enable ssh
+sudo visudo
 
 # These are not all on one line as sometimes a package wont install interupting the whole install process.
 sudo apt-get -y update
 sudo apt-get -y upgrade
 sudo apt-get -y dist-upgrade
+sudo apt-get -y install openssh-server
+sudo systemctl enable ssh
 sudo apt-get -y install aircrack-ng
 sudo apt-get -y install apache2
 sudo apt-get -y install autossh
