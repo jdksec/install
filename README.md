@@ -14,7 +14,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 git clone https://github.com/jdksec/install.git
 cd install
 chmod 777 install.sh
-sudo ./install.sh
+./install.sh
 ```
 
 Once finished
