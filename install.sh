@@ -2,6 +2,9 @@
 
 sudo visudo
 
+sudo chmod 777 bins/* 
+sudo cp -r bins/* /bin/
+
 # These are not all on one line as sometimes a package wont install interupting the whole install process.
 sudo apt-get -y update
 sudo apt-get -y upgrade
