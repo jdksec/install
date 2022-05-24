@@ -6,10 +6,10 @@ function virtualenv_info {
     [[ -n "$VIRTUAL_ENV" ]] && echo '('${VIRTUAL_ENV:t}') '
 }
 
-PROMPT='%F{166}%n%f at %F{118}%m%f in %B%F{green}%~%f%b$(git_prompt_info)$(ruby_prompt_info)
-$(virtualenv_info)%F{166}$(prompt_char)%F{white} '
+PROMPT='%F{039}%n@%F{039}%m%f %B%F{039}%~%f%b$(git_prompt_info)$(ruby_prompt_info)
+$(virtualenv_info)%F{039}$(prompt_char)%F{white} '
 
-ZSH_THEME_GIT_PROMPT_PREFIX=' on %F{50}'
+ZSH_THEME_GIT_PROMPT_PREFIX=' on %F{039}'
 ZSH_THEME_GIT_PROMPT_SUFFIX='%f'
 ZSH_THEME_GIT_PROMPT_DIRTY='%F{green}!'
 ZSH_THEME_GIT_PROMPT_UNTRACKED='%F{green}?'
