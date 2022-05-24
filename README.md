@@ -4,7 +4,7 @@ Works on WSL & Linux
 ## Install ohmyzsh
 
 ```
-sudo apt install -y zsh git curl
+sudo apt install -y zsh git curl vim
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
@@ -13,6 +13,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ```
 git clone https://github.com/jdksec/install.git
 cd install
+vim install.sh
 chmod 777 install.sh
 ./install.sh
 ```
