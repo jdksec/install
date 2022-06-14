@@ -1,7 +1,7 @@
 # Env Setup
   dir=`pwd`
   date=`date +%d-%m-%y`
-  mdfile="$dir/$date-hostscans.md"
+  mdfile="hostscans.md"
   target=$(echo $1 | cut -d "/" -f 3)
   userlist=~/Tools/SecLists/Usernames/top-usernames-shortlist.txt
   passlist=~/Tools/SecLists/Passwords/darkweb2017-top100.txt
