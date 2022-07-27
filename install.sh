@@ -1,5 +1,7 @@
 # Basic tool installation
 
+sudo vim /etc/hostname
+
 sudo visudo
 
 sudo chmod 777 bins/* 
