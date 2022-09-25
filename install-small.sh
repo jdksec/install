@@ -1,6 +1,6 @@
 # Basic tool installation
 
-sudo visudo
+#sudo visudo
 
 sudo chmod 777 bins/*
 
