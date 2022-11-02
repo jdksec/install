@@ -4,7 +4,7 @@
 sudo apt-get -y update
 sudo apt-get -y upgrade
 sudo apt-get -y dist-upgrade
-sudo apt install zsh git tmux
+sudo apt install zsh git tmux -y
 wget https://raw.githubusercontent.com/jdksec/install/master/.zshrc -O ~/.zshrc
 wget https://raw.githubusercontent.com/jdksec/install/master/.vimrc -O ~/.vimrc
 wget https://raw.githubusercontent.com/jdksec/install/master/.tmux.conf -O ~/.tmux.conf
