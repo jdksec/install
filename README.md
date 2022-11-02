@@ -7,13 +7,6 @@ Works on WSL & Linux
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/jdksec/install/master/install-small.sh)"
 ```
 
-## Install ohmyzsh
-
-```
-sudo apt install -y zsh git curl vim
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
-
 ## Install environment
 
 ```
