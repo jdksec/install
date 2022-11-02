@@ -15,6 +15,7 @@ cd ~/
 mkdir .trash
 mkdir Tools
 mkdir Lab
+git clone https://github.com/jdksec/install.git
 
 chsh -s $(which zsh)
 zsh
