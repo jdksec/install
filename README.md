@@ -1,7 +1,7 @@
 # Install process
 Works on WSL & Linux
 
-# Small Install
+## Small Install
 
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/jdksec/install/master/install-small.sh)"
