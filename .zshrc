@@ -1,4 +1,4 @@
- If you come from bash you might have to change your $PATH.
+# If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 
@@ -94,9 +94,6 @@ alias l='ls -a1'
 alias ls='ls -a1'
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$HOME/go/bin:$PATH
-function prompt_char {
-    echo 'λ'
-}
 
 PROMPT='%B%F{red}[%D{%f/%m/%y} %D{%L:%M:%S}] %B%F{green}%n%B%F{green}|%B%F{green}%m%f %b%F{green}%~%f%b%B%F{green} #%F{white} '
 
