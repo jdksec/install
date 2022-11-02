@@ -31,5 +31,5 @@ mkdir Lab
 
 sudo systemctl disable apache2
 sudo systemctl stop apache2
-
-sudo reboot
+chsh -s $(which zsh)
+#sudo reboot
