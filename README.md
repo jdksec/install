@@ -1,6 +1,12 @@
 # Install process
 Works on WSL & Linux
 
+# Small Install
+
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/jdksec/install/master/install-small.sh)"
+```
+
 ## Install ohmyzsh
 
 ```
