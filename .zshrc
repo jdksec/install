@@ -1,14 +1,6 @@
-# If you come from bash you might have to change your $PATH.
+ If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
-
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="jdksec"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -72,8 +64,6 @@ ZSH_THEME="jdksec"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
-source $ZSH/oh-my-zsh.sh
-
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -108,6 +98,6 @@ function prompt_char {
     echo 'λ'
 }
 
-PROMPT='%{$fg[red]%}[%D{%f/%m/%y} %D{%L:%M:%S}] %B%F{green}%n%B%F{green}|%B%F{green}%m%f %b%F{green}%~%f%b%B%F{green} $(prompt_char)%F{white} '
+PROMPT='%B%F{red}[%D{%f/%m/%y} %D{%L:%M:%S}] %B%F{green}%n%B%F{green}|%B%F{green}%m%f %b%F{green}%~%f%b%B%F{green} #%F{white} '
 
 PR_RST="%{${reset_color}%}"
