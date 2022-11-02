@@ -1,3 +1,6 @@
+set noerrorbells visualbell t_vb=
+autocmd GUIEnter * set visualbell t_vb=
+set pastetoggle=<F2>
 syntax on                         " show syntax highlighting
 set background=dark
 set autoindent                    " set auto indent
@@ -16,10 +19,15 @@ set ruler                         " show row and column in footer
 set scrolloff=2                   " minimum lines above/below cursor
 set laststatus=2                  " always show status bar
 set nofoldenable                  " disable code folding
-set clipboard=unnamed             " use the system clipboard
+set clipboard=             " use the system clipboard
 set wildmenu                      " enable bash style tab completion
 set wildmode=list:longest,full
 runtime macros/matchit.vim        " use % to jump between start/end of methods
+set backspace=indent,eol,start
+" Shortcuts "
+
+inoremap <C-t> <Home><C-R><CR><C-R>=strftime("[%d/%m/%y %H:%M:%S] ")<CR>
+nnoremap q <c-v>
 
 """"""""""""""""""""""
 " BEGIN WINDOWS CONFIG
@@ -47,3 +55,25 @@ if 1
   exe 'inoremap <script> <C-V> <C-G>u' . paste#paste_cmd['i']
   exe 'vnoremap <script> <C-V> ' . paste#paste_cmd['v']
 endif
+
+
+if $VIMENV == 'talk'
+  set background=light
+  let g:solarized_termcolors=256
+  colo solarized
+  noremap <Space> :n<CR>
+  noremap <Backspace> :N<CR>
+else
+  " Trans background
+  hi Normal ctermbg=none
+  hi NonText ctermbg=none
+endif
+
+if $VIMENV == 'prev'
+  noremap <Space> :n<CR>
+  noremap <Backspace> :N<CR>
+  noremap <C-D> :call delete(expand('%')) <bar> argdelete % <bar> bdelete<CR>
+  set noswapfile
+endif
+autocmd BufNewFile,BufFilePre,BufRead *.md set filetype=markdown.pandoc
+
