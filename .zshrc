@@ -1,4 +1,5 @@
-CASE_SENSITIVE="false"
+autoload -Uz compinit && compinit
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 source ~/.zprofile
 alias l='ls -a1'
 alias ls='ls -a1'
