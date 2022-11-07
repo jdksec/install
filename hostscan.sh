@@ -25,7 +25,7 @@
 
 # nmap udp scan
   echo "\n## Nmap UDP ...\n" | tee -a report-$target.md
-  sudo nmap -sUVC --open $target --top-ports 20 -oN nmap-udp/$target
+  sudo nmap -sUVC --open $target --top-ports 200 -oN nmap-udp/$target
   cat nmap-udp/* >> report-$target.md
 
 # get services
