@@ -1,5 +1,4 @@
 set noerrorbells visualbell t_vb=
-set paste
 autocmd GUIEnter * set visualbell t_vb=
 set pastetoggle=<F2>
 syntax on                         " show syntax highlighting
@@ -27,8 +26,8 @@ runtime macros/matchit.vim        " use % to jump between start/end of methods
 set backspace=indent,eol,start
 " Shortcuts "
 
-inoremap <C-A> <Home><C-R><CR><C-R>=strftime("[%d/%m/%y %H:%M:%S] ")<CR><End>
-nnoremap <C-A> <Home><C-R><CR><C-R>=strftime("[%d/%m/%y %H:%M:%S] ")<CR><End>
+inoremap <C-a> <Home><C-R><CR><C-R>=strftime("[%d/%m/%y %H:%M:%S] ")<CR><end>
+nnoremap <C-a> <Home><C-R><CR><C-R>=strftime("[%d/%m/%y %H:%M:%S] ")<CR><end>
 nnoremap q <c-v>
 
 """"""""""""""""""""""
