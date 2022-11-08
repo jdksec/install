@@ -10,11 +10,11 @@ wget https://raw.githubusercontent.com/jdksec/install/master/.tmux.conf -O ~/.tm
 wget https://raw.githubusercontent.com/jdksec/install/master/.zprofile -O ~/.zprofile
 
 # Install golang
-wget https://golang.org/dl/go1.17.linux-amd64.tar.gz
-sudo tar -C /usr/local -xzf go1.17.linux-amd64.tar.gz
+wget https://golang.org/dl/go1.19.3.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.19.3.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
 go version
-/bin/rm go1.17.linux-amd64.tar.gz
+/bin/rm go1.19.3.linux-amd64.tar.gz
 
 # Install go tools
 go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
@@ -35,6 +35,9 @@ chmod +x ~/install/hostscan.sh
 cd ~/
 cd Tools
 git clone https://github.com/danielmiessler/SecLists.git
+git clone https://github.com/CiscoCXSecurity/enum4linux.git
+git clone https://github.com/drwetter/testssl.sh.git
+chmod +x testssl.sh/testssl.sh
 cd ~/
 
 chsh -s $(which zsh)
