@@ -10,6 +10,7 @@ wget https://raw.githubusercontent.com/jdksec/install/master/.tmux.conf -O ~/.tm
 wget https://raw.githubusercontent.com/jdksec/install/master/.zprofile -O ~/.zprofile
 
 # Install golang
+sudo /bin/rm -rf /usr/local/go
 wget https://golang.org/dl/go1.19.3.linux-amd64.tar.gz
 sudo tar -C /usr/local -xzf go1.19.3.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
