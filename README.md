@@ -1,4 +1,4 @@
-# Install process
+# Install 
 Works on WSL & Linux
 
 ## Small Install
@@ -12,6 +12,12 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/jdksec/install/master/inst
 ```
 sudo su
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/jdksec/install/master/runasroot-docker.sh)"
+```
+
+# Docker Images
+```
+docker run --rm -p 3000:3000 bkimminich/juice-shop
+docker pull owasp/zap2docker-stable
 ```
 
 ## Install environment
