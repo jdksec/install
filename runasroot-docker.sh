@@ -6,5 +6,5 @@ sudo apt-get -y install docker-ce
 sudo apt-get -y install docker-compose
 sudo service docker status
 echo "Run the following as the current user"
-echo "sudo groupadd docker"
-echo "sudo usermod -aG docker \$USER"
+echo "sudo groupadd docker; sudo usermod -aG docker \$USER"
+echo "Reboot or log out and backin to get permissions"
