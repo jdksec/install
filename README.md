@@ -21,6 +21,12 @@ docker run -it -p 8000:8000 opensecurity/mobile-security-framework-mobsf:latest
 docker pull owasp/zap2docker-stable
 ```
 
+# Scan site with zap
+
+```
+docker run  --rm -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-stable zap-full-scan.py -t "https://target.site" -g gen.conf -r report.html -J report.json
+```
+
 ## Install environment
 
 ```
@@ -29,12 +35,6 @@ cd install
 vim install.sh
 chmod 777 install.sh
 ./install.sh
-```
-
-Once finished
-
-```
-ssh-keygen
 ```
 
 ## Install WSL (Windows)
