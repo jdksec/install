@@ -7,6 +7,14 @@ Works on WSL & Linux
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/jdksec/install/master/install-small.sh)"
 ```
 
+# Docker
+
+```
+sudo su
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/jdksec/install/master/runasroot-docker.sh)"
+
+```
+
 ## Install environment
 
 ```
