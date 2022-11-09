@@ -1,0 +1,40 @@
+cd ~/
+mkdir -p ~/Tools
+cd ~/Tools
+git clone https://github.com/nccgroup/GTFOBLookup.git
+git clone https://github.com/bulletmark/libinput-gestures.git
+git clone https://github.com/byt3bl33d3r/CrackMapExec.git
+git clone https://github.com/v1s1t0r1sh3r3/airgeddon.git
+git clone https://gitlab.com/cunidev/gestures
+git clone https://github.com/quentinhardy/odat.git
+git clone https://github.com/SecWiki/linux-kernel-exploits.git
+git clone https://github.com/PowerShellMafia/PowerSploit.git
+git clone https://github.com/mzfr/gtfo.git
+git clone https://github.com/arkadiyt/bounty-targets-data.git
+git clone https://github.com/s0md3v/Arjun.git
+git clone https://github.com/BishopFox/GitGot.git
+git clone https://github.com/danielmiessler/SecLists.git
+git clone https://github.com/epinna/tplmap.git
+git clone https://github.com/FortyNorthSecurity/EyeWitness.git
+git clone https://github.com/galkan/crowbar.git
+git clone https://github.com/GerbenJavado/LinkFinder.git
+git clone https://github.com/initstring/cloud_enum.git
+git clone https://github.com/jobertabma/relative-url-extractor.git
+git clone https://github.com/jordanpotti/CloudScraper.git
+git clone https://github.com/InfosecMatter/default-http-login-hunter.git
+git clone https://github.com/robertdavidgraham/masscan.git
+git clone https://github.com/s0md3v/XSStrike.git
+git clone https://github.com/devanshbatham/ParamSpider
+git clone https://github.com/swisskyrepo/PayloadsAllTheThings.git
+git clone https://github.com/sa7mon/S3Scanner.git
+git clone https://github.com/projectdiscovery/nuclei-templates.git
+git clone https://github.com/disclose/disclose.git
+git clone https://github.com/projectdiscovery/public-bugbounty-programs.git
+git clone https://github.com/SecureAuthCorp/impacket.git
+git clone https://github.com/3ndG4me/AutoBlue-MS17-010.git
+git clone https://github.com/trustedsec/unicorn.git
+git clone https://github.com/pentestmonkey/windows-privesc-check.git
+git clone https://github.com/n8v79a/win-exploit.git
+git clone https://github.com/Hackplayers/evil-winrm.git
+git clone https://github.com/LMGsec/o365creeper
+cd ~/
