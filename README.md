@@ -16,15 +16,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/jdksec/install/master/runa
 
 # Docker Images
 ```
-docker run --rm -p 3000:3000 bkimminich/juice-shop
-docker run -it -p 8000:8000 opensecurity/mobile-security-framework-mobsf:latest
-docker pull owasp/zap2docker-stable
-```
-
-# Scan site with zap
-
-```
-docker run  --rm -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-stable zap-full-scan.py -t "https://target.site" -g gen.conf -r report.html -J report.json
+docker run --rm -p 0.0.0.0:3000:3000 bkimminich/juice-shop
+docker run -it -p 0.0.0.0:8000:8000 opensecurity/mobile-security-framework-mobsf:latest
+docker run  --rm -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-stable zap-full-scan.py -t "http://testphp.vulnweb.com" -g gen.conf -r report.html -J report.json
 ```
 
 ## Install environment
