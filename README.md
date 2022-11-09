@@ -12,7 +12,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/jdksec/install/master/inst
 ```
 sudo su
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/jdksec/install/master/runasroot-docker.sh)"
-
 ```
 
 ## Install environment
