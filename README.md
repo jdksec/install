@@ -17,6 +17,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/jdksec/install/master/runa
 # Docker Images
 ```
 docker run --rm -p 3000:3000 bkimminich/juice-shop
+docker run -it -p 8000:8000 opensecurity/mobile-security-framework-mobsf:latest
 docker pull owasp/zap2docker-stable
 ```
 
