@@ -1,9 +1,9 @@
 # Basic tool installation
 sudo visudo
 sudo apt-get -y update
-sudo apt-get -y upgrade
-sudo apt-get -y dist-upgrade
-sudo apt install zsh git tmux python3 python3-pip -y
+#sudo apt-get -y upgrade
+#sudo apt-get -y dist-upgrade
+sudo apt install zsh git tmux python3 python3-pip ruby-dev -y
 wget https://raw.githubusercontent.com/jdksec/install/master/.zshrc -O ~/.zshrc
 wget https://raw.githubusercontent.com/jdksec/install/master/.vimrc -O ~/.vimrc
 wget https://raw.githubusercontent.com/jdksec/install/master/.tmux.conf -O ~/.tmux.conf
@@ -22,6 +22,9 @@ go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
 
 # Install python tools
 pip3 install updog
+
+# Install ruby tools
+sudo gem install wpscan
 
 # Create folders
 cd ~/
