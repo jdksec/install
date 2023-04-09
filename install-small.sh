@@ -3,7 +3,7 @@ sudo visudo
 sudo apt-get -y update
 #sudo apt-get -y upgrade
 #sudo apt-get -y dist-upgrade
-sudo apt install zsh git tmux python3 python3-pip ruby-dev -y
+sudo apt install zsh git tmux python3 python3-pip ruby-dev openssh-server -y
 wget https://raw.githubusercontent.com/jdksec/install/master/.zshrc -O ~/.zshrc
 wget https://raw.githubusercontent.com/jdksec/install/master/.vimrc -O ~/.vimrc
 wget https://raw.githubusercontent.com/jdksec/install/master/.tmux.conf -O ~/.tmux.conf
@@ -43,6 +43,9 @@ git clone https://github.com/CiscoCXSecurity/enum4linux.git
 git clone https://github.com/drwetter/testssl.sh.git
 chmod +x testssl.sh/testssl.sh
 cd ~/
+
+# Enable SSH
+sudo systemctl enable ssh.service; sudo systemctl start ssh.service
 
 chsh -s $(which zsh)
 zsh
