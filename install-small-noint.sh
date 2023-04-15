@@ -49,4 +49,4 @@ sudo systemctl enable ssh.service; sudo systemctl start ssh.service
 # get templates
 ~/go/bin/nuclei
 
-chsh -s $(which zsh)
+
