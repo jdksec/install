@@ -45,8 +45,3 @@ cd ~/
 
 # Enable SSH
 sudo systemctl enable ssh.service; sudo systemctl start ssh.service
-
-# get templates
-~/go/bin/nuclei
-
-
