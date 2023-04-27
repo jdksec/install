@@ -33,6 +33,7 @@ mkdir Tools
 mkdir Lab
 git clone https://github.com/jdksec/install.git
 chmod +x ~/install/hostscan.sh
+chmod +x ~/install/bins/*
 
 
 # Download some repos
