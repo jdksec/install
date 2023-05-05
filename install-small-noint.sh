@@ -42,6 +42,3 @@ git clone https://github.com/CiscoCXSecurity/enum4linux.git
 git clone https://github.com/drwetter/testssl.sh.git
 chmod +x testssl.sh/testssl.sh
 cd ~/
-
-# Enable SSH
-sudo systemctl enable ssh.service; sudo systemctl start ssh.service
