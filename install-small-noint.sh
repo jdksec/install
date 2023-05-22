@@ -53,3 +53,4 @@ sudo service docker status
 echo "Run the following as the current user"
 echo "sudo groupadd docker; sudo usermod -aG docker \$USER"
 echo "Reboot or log out and backin to get permissions"
+chsh -s $(which zsh)
