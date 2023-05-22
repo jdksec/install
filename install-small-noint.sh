@@ -2,7 +2,7 @@
 sudo apt-get -y update
 #sudo apt-get -y upgrade
 #sudo apt-get -y dist-upgrade
-sudo apt install zsh git tmux python3 python3-pip ruby-dev openssh-server socat -y
+sudo apt install zsh git tmux python3 python3-pip ruby-dev socat -y
 wget https://raw.githubusercontent.com/jdksec/install/master/.zshrc -O ~/.zshrc
 wget https://raw.githubusercontent.com/jdksec/install/master/.vimrc -O ~/.vimrc
 wget https://raw.githubusercontent.com/jdksec/install/master/.tmux.conf -O ~/.tmux.conf
