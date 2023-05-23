@@ -7,3 +7,4 @@ mkdirdate(){mkdir $(date +%d-%m-%y_%H-%M-%S)}
 +scantargets(){rush -i $1 -c "~/install/hostscan.sh {}"}
 uhoh(){sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2})?)?[mGK]//g"}
 +tl(){tmux capture-pane -pS -1000000 | sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2})?)?[mGK]//g" >> ~/terminallogs/$(date +%y%m%d)-$(hostname).txt; exit}
+exit(){tmux capture-pane -pS -1000000 | sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2})?)?[mGK]//g" >> ~/terminallogs/$(date +%y%m%d)-$(hostname).txt; exit}
