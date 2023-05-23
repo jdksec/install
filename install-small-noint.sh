@@ -17,7 +17,7 @@ go version
 /bin/rm go1.19.3.linux-amd64.tar.gz
 
 # Install go tools
-go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
+go install github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
 
 # Install python tools
 pip3 install updog
