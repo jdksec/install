@@ -30,6 +30,7 @@ cd ~/
 mkdir .trash
 mkdir Tools
 mkdir Lab
+mkdir terminallogs
 git clone https://github.com/jdksec/install.git
 chmod +x ~/install/hostscan.sh
 
