@@ -29,6 +29,7 @@ sudo gem install wpscan
 # Create folders
 cd ~/
 mkdir .trash
+mkdir terminallogs
 mkdir Tools
 mkdir Lab
 git clone https://github.com/jdksec/install.git
