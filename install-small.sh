@@ -19,6 +19,7 @@ go version
 
 # Install go tools
 go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
+go install -v github.com/projectdiscovery/interactsh/cmd/interactsh-server@latest
 
 # Install python tools
 pip3 install updog
