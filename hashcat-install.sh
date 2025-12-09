@@ -15,7 +15,7 @@ echo "---"
 
 # 2. Install core tools
 echo "Running: sudo apt install -y unzip hashcat vim tmux gzip"
-sudo apt install -y unzip hashcat vim tmux gunzip
+sudo apt install -y unzip hashcat vim tmux gzip
 if [ $? -ne 0 ]; then
     echo "ERROR: Core package installation failed. Stopping script."
     exit 1
