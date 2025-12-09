@@ -7,6 +7,11 @@ Works on WSL & Linux
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/jdksec/install/master/install-small.sh)"
 ```
 
+## hashcat install
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/jdksec/install/master/hashcat-install.sh)"
+```
+
 # Docker
 
 ```
