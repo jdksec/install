@@ -1,3 +1,4 @@
+echo "Waiting for system to load"
 sleep 60
 echo "Starting sequential package installation and updates..."
 echo "---"
