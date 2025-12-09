@@ -1,6 +1,38 @@
+sleep 60
+echo "Starting sequential package installation and updates..."
+echo "---"
+
+# 1. Update package lists
+echo "Running: sudo apt update"
 sudo apt update
+if [ $? -ne 0 ]; then
+    echo "ERROR: 'sudo apt update' failed. Stopping script."
+    exit 1
+fi
+echo "Update successful."
+echo "---"
+
+# 2. Install core tools
+echo "Running: sudo apt install -y unzip hashcat vim tmux gunzip"
 sudo apt install -y unzip hashcat vim tmux gunzip
+if [ $? -ne 0 ]; then
+    echo "ERROR: Core package installation failed. Stopping script."
+    exit 1
+fi
+echo "Core package installation successful."
+echo "---"
+
+# 3. Install specific NVIDIA components
+echo "Running: sudo apt -V install libnvidia-compute-580 nvidia-dkms-580-open"
 sudo apt -V install libnvidia-compute-580 nvidia-dkms-580-open
+if [ $? -ne 0 ]; then
+    echo "ERROR: NVIDIA package installation failed. Stopping script."
+    exit 1
+fi
+echo "NVIDIA package installation successful."
+echo "---"
+
+echo "All commands executed successfully."
 
 
 # Get password Lists
