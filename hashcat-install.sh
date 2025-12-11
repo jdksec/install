@@ -14,8 +14,8 @@ echo "Update successful."
 echo "---"
 
 # 2. Install core tools
-echo "Running: sudo apt install -y unzip hashcat vim tmux gzip"
-sudo apt install -y unzip hashcat vim tmux gzip
+echo "Installing Tools"
+sudo apt install -y unzip hashcat vim tmux gzip p7zip
 if [ $? -ne 0 ]; then
     echo "ERROR: Core package installation failed. Stopping script."
     exit 1
@@ -24,7 +24,7 @@ echo "Core package installation successful."
 echo "---"
 
 # 3. Install specific NVIDIA components
-echo "Running: sudo apt -V install libnvidia-compute-580 nvidia-dkms-580-open"
+echo "Installing Nvidia Drivers"
 sudo apt -V install libnvidia-compute-580 nvidia-dkms-580-open
 if [ $? -ne 0 ]; then
     echo "ERROR: NVIDIA package installation failed. Stopping script."
@@ -38,11 +38,14 @@ echo "All commands executed successfully."
 
 # Get password Lists
 echo "Gathering password lists"
+wget https://weakpass.com/download/2012/weakpass_4.txt.7z
+7z x weakpass_4.txt.7z
+cat weakpass_4.txt > temp.txt
 wget https://crackstation.net/files/crackstation.txt.gz
 gunzip crackstation.txt.gz
 wget https://github.com/RykerWilder/rockyou.txt/raw/refs/heads/main/rockyou.txt.zip
 unzip rockyou.txt.zip
-cat rockyou.txt crackstation.txt > temp.txt
+cat rockyou.txt crackstation.txt >> temp.txt
 echo "Sorting final wordlist to wordlist.txt"
 LC_ALL=C sort -u --parallel=16 -S 75 temp.txt > wordlist.txt
 /bin/rm temp.txt
