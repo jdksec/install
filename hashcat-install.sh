@@ -25,7 +25,7 @@ echo "---"
 
 # 3. Install specific NVIDIA components
 echo "Installing Nvidia Drivers"
-sudo apt -V install libnvidia-compute-580 nvidia-dkms-580-open
+sudo apt -V install libnvidia-compute-580 nvidia-dkms-580-open -y
 if [ $? -ne 0 ]; then
     echo "ERROR: NVIDIA package installation failed. Stopping script."
     exit 1
