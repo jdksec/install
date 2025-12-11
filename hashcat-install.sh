@@ -41,7 +41,8 @@ wget https://crackstation.net/files/crackstation.txt.gz
 gunzip crackstation.txt.gz
 wget https://github.com/RykerWilder/rockyou.txt/raw/refs/heads/main/rockyou.txt.zip
 unzip rockyou.txt.zip
-cat rockyou.txt crackstation.txt > wordlist.txt
+cat rockyou.txt crackstation.txt > temp.txt
+LC_ALL=C sort -u --parallel=16 -S 75 temp.txt > wordlist.txt
 
 # Get Rules
 wget https://raw.githubusercontent.com/samirettali/password-cracking-rules/refs/heads/master/best64.rule
