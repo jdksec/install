@@ -52,7 +52,7 @@ echo "Getting rules"
 wget https://raw.githubusercontent.com/samirettali/password-cracking-rules/refs/heads/master/best64.rule
 wget https://raw.githubusercontent.com/samirettali/password-cracking-rules/refs/heads/master/T0XlC.rule
 wget https://raw.githubusercontent.com/samirettali/password-cracking-rules/refs/heads/master/OneRuleToRuleThemAll.rule
-wget https://github.com/samirettali/password-cracking-rules/blob/master/dive.rule
+wget https://raw.githubusercontent.com/samirettali/password-cracking-rules/refs/heads/master/dive.rule
 
 # Set terminal
 echo "Configuring terminal for zsh and tmux"
