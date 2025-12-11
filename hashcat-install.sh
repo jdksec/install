@@ -37,19 +37,24 @@ echo "All commands executed successfully."
 
 
 # Get password Lists
+echo "Gathering password lists"
 wget https://crackstation.net/files/crackstation.txt.gz
 gunzip crackstation.txt.gz
 wget https://github.com/RykerWilder/rockyou.txt/raw/refs/heads/main/rockyou.txt.zip
 unzip rockyou.txt.zip
 cat rockyou.txt crackstation.txt > temp.txt
+echo "Sorting final wordlist to wordlist.txt"
 LC_ALL=C sort -u --parallel=16 -S 75 temp.txt > wordlist.txt
+/bin/rm temp.txt
 
 # Get Rules
+echo "Getting rules"
 wget https://raw.githubusercontent.com/samirettali/password-cracking-rules/refs/heads/master/best64.rule
 wget https://raw.githubusercontent.com/samirettali/password-cracking-rules/refs/heads/master/T0XlC.rule
 wget https://raw.githubusercontent.com/samirettali/password-cracking-rules/refs/heads/master/OneRuleToRuleThemAll.rule
 wget https://github.com/samirettali/password-cracking-rules/blob/master/dive.rule
 
 # Set terminal
+echo "Configuring terminal for zsh and tmux"
 wget https://raw.githubusercontent.com/jdksec/install/master/.vimrc -O ~/.vimrc
 wget https://raw.githubusercontent.com/jdksec/install/master/.tmux.conf -O ~/.tmux.conf
