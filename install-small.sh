@@ -3,7 +3,7 @@ sudo visudo
 sudo apt-get -y update
 #sudo apt-get -y upgrade
 #sudo apt-get -y dist-upgrade
-sudo apt install zsh git tmux python3 python3-pip ruby-dev openssh-server -y
+sudo apt install zsh git tmux python3 python3-pip socat ruby-dev openssh-server -y
 wget https://raw.githubusercontent.com/jdksec/install/master/.zshrc -O ~/.zshrc
 wget https://raw.githubusercontent.com/jdksec/install/master/.vimrc -O ~/.vimrc
 wget https://raw.githubusercontent.com/jdksec/install/master/.tmux.conf -O ~/.tmux.conf
@@ -18,14 +18,14 @@ go version
 /bin/rm go1.24.5.linux-amd64.tar.gz
 
 # Install go tools
-go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
-go install -v github.com/projectdiscovery/interactsh/cmd/interactsh-server@latest
+#go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
+#go install -v github.com/projectdiscovery/interactsh/cmd/interactsh-server@latest
 
 # Install python tools
-pip3 install updog
+#pip3 install updog
 
 # Install ruby tools
-sudo gem install wpscan
+#sudo gem install wpscan
 
 # Create folders
 cd ~/
@@ -39,12 +39,12 @@ chmod +x ~/install/bins/*
 
 
 # Download some repos
-cd ~/
-cd Tools
+#cd ~/
+#cd Tools
 #git clone https://github.com/danielmiessler/SecLists.git
 #git clone https://github.com/CiscoCXSecurity/enum4linux.git
-git clone https://github.com/drwetter/testssl.sh.git
-chmod +x testssl.sh/testssl.sh
+#git clone https://github.com/drwetter/testssl.sh.git
+#chmod +x testssl.sh/testssl.sh
 cd ~/
 
 # Enable SSH
