@@ -48,7 +48,7 @@ chmod +x ~/install/bins/*
 cd ~/
 
 # Enable SSH
-sudo systemctl enable ssh.service; sudo systemctl start ssh.service
+#sudo systemctl enable ssh.service; sudo systemctl start ssh.service
 
 chsh -s $(which zsh)
 zsh
