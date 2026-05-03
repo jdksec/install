@@ -50,5 +50,4 @@ cd ~/
 # Enable SSH
 #sudo systemctl enable ssh.service; sudo systemctl start ssh.service
 
-chsh -s $(which zsh)
-zsh
+sudo chsh -s $(which zsh) $USER
