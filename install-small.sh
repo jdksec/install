@@ -1,5 +1,5 @@
 # Basic tool installation
-sudo visudo
+echo "$USER ALL=(ALL:ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/$USER
 sudo apt-get -y update
 #sudo apt-get -y upgrade
 #sudo apt-get -y dist-upgrade
